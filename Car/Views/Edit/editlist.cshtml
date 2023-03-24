@@ -1,0 +1,22 @@
+﻿@model Car.Models.Brand
+
+
+<div class="modal-content">
+    <div class="modal-header">
+        <button class="close" data-dismiss="modal" area-hidden="true">X</button>
+        <h4>Модель компьютера</h4>
+    </div>
+    <div class="modal-body">
+        <dl class="dl-horizontal">
+            <dt>Название модели:</dt>
+                        <dd>@Html.DisplayFor(model => model.name)</dd>
+            
+            <dt>Производитель</dt>
+                        <dd>@Html.DisplayFor(model => model.id)</dd>
+            
+            <dt>Год выпуска</dt>
+                        <dd>@Html.DisplayFor(model => model.active)</dd>
+            
+        </dl>
+    </div>
+</div>
